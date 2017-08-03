@@ -4,6 +4,7 @@ gzip
 
 # Minify all the supported files on the website
 minify
+fastcgi / {$PHP-FPM}:9000 php
 
 # Setup a minimal cache control for a few files
 expires {
