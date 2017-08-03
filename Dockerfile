@@ -13,4 +13,4 @@ RUN mkdir -p /app/ssl /app/www /app/conf
 ADD files/caddy /aṕp/
 ADD files/Caddyfile /app/conf/
 
-CMD /app/caddy -agree -log=stdout -conf=/app/Caddyfile -root=$BASEDIR
+CMD /app/caddy -agree -log=stdout -conf=/app/conf/Caddyfile -root=$BASEDIR
