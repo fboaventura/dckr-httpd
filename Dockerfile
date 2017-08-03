@@ -10,7 +10,7 @@ ENV PORT "80"
 
 RUN mkdir -p /app/ssl /app/www /app/conf
 
-ADD files/caddy /aṕp/
+ADD files/caddy /app/
 ADD files/Caddyfile /app/conf/
 
 CMD /app/caddy -agree -log=stdout -conf=/app/conf/Caddyfile -root=$BASEDIR
