@@ -5,10 +5,12 @@ LABEL version "1.0"
 
 ENV DOMAIN "localhost"
 ENV BASEDIR "/app/www"
+ENV CONFDIR "/app/conf"
 ENV PORT "80"
 
-ADD files/caddy files/Caddyfile /app/
+RUN mkdir -p /app/ssl /app/www /app/conf
 
-RUN mkdir -p /app/ssl /app/www
+ADD files/caddy /aṕp/
+ADD files/Caddyfile /app/conf/
 
 CMD /app/caddy -agree -log=stdout -conf=/app/Caddyfile -root=$BASEDIR

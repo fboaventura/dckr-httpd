@@ -1,3 +1,18 @@
 {$DOMAIN}:{$PORT}
 root {$BASEDIR}
 gzip
+
+# Minify all the supported files on the website
+minify
+
+# Setup a minimal cache control for a few files
+expires {
+    match .css$ 7d
+    match .js$ 7d
+    match .png$ 1d
+    match .jpg$ 1d
+    match .pdf$ 2h
+    match .txt$ 2h
+    match .html$ 5i
+    match .php$ 2i
+}

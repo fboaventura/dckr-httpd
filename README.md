@@ -17,6 +17,7 @@ You can, of course, pass some custom values to fiche, in order to make it more p
 ```dockerfile
 ENV DOMAIN "localhost"
 ENV BASEDIR "/app/www"
+ENV CONFDIR "/app/conf"
 ENV PORT "80"
 ```
 
