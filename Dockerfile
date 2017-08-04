@@ -7,7 +7,7 @@ ENV DOMAIN "localhost"
 ENV BASEDIR "/app/www"
 ENV CONFDIR "/app/conf"
 ENV PORT "80"
-ENV PHP-FPM "php-fpm"
+ENV PHP_FPM "php-fpm"
 
 RUN mkdir -p /app/ssl /app/www /app/conf
 
