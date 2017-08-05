@@ -10,12 +10,14 @@ fastcgi / {$PHP_FPM}:9000 php {
 
 # Setup a minimal cache control for a few files
 expires {
-    match .css$ 7d
-    match .js$ 7d
-    match .png$ 1d
-    match .jpg$ 1d
+    match .css$ 2d
+    match .woff$ 7d
+    match .png$ 2d
+    match .jpg$ 2d
+    match .gif$ 2d
     match .pdf$ 2h
     match .txt$ 2h
+    match .js$ 1h
     match .html$ 5i
     match .php$ 2i
 }
