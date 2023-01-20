@@ -1,11 +1,19 @@
-[![GitHub license](https://img.shields.io/github/license/fboaventura/dckr-httpd)](https://github.com/fboaventura/dckr-httpd/blob/master/LICENSE)
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Ffboaventura%2Fdckr-httpd.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Ffboaventura%2Fdckr-httpd?ref=badge_shield)
-[![DockerPulls](https://img.shields.io/docker/pulls/fboaventura/dckr-httpd.svg)](https://hub.docker.com/r/fboaventura/dckr-httpd)
-[![DockerPulls](https://img.shields.io/docker/stars/fboaventura/dckr-httpd.svg)](https://hub.docker.com/r/fboaventura/dckr-httpd)
+<center>
+
+[![Docker Stars](https://img.shields.io/docker/stars/fboaventura/dckr-httpd.svg)](https://hub.docker.com/r/fboaventura/dckr-httpd)
+![Docker Pulls](https://img.shields.io/docker/pulls/fboaventura/dckr-httpd)
+![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/fboaventura/dckr-httpd)
+![Docker Automated build](https://img.shields.io/docker/automated/fboaventura/dckr-httpd)
+
+![GitHub top language](https://img.shields.io/github/languages/top/fboaventura/dckr-httpd)
 [![GitHub forks](https://img.shields.io/github/forks/fboaventura/dckr-httpd)](https://github.com/fboaventura/dckr-httpd/network)
 [![GitHub stars](https://img.shields.io/github/stars/fboaventura/dckr-httpd)](https://github.com/fboaventura/dckr-httpd/stargazers)
 [![GitHub issues](https://img.shields.io/github/issues/fboaventura/dckr-httpd)](https://github.com/fboaventura/dckr-httpd/issues)
-[![dockeri.co](https://dockeri.co/image/fboaventura/dckr-httpd)](https://hub.docker.com/r/fboaventura/dckr-httpd)
+
+[![GitHub license](https://img.shields.io/github/license/fboaventura/dckr-httpd)](https://github.com/fboaventura/dckr-httpd/blob/master/LICENSE)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Ffboaventura%2Fdckr-httpd.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Ffboaventura%2Fdckr-httpd?ref=badge_shield)
+
+</center>
 
 # fboaventura/dckr-httpd
 
