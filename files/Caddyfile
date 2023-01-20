@@ -1,18 +1,29 @@
-{$DOMAIN}:{$PORT}
-root {$BASEDIR}
-gzip
+{
+    log access {
+        output stdout
+        format json
+        level  info
+    }
+    log error {
+        output stderr
+        format json
+        level  error
+    }
 
-# Minify all the supported files on the website
-minify
+    servers {
+        metrics
+        log_credentials
+    }
+}
 
-# Setup a minimal cache control for a few files
-expires {
-    match .css$ 7d
-    match .js$ 7d
-    match .png$ 1d
-    match .jpg$ 1d
-    match .pdf$ 2h
-    match .txt$ 2h
-    match .html$ 5i
-    match .php$ 2i
+{$DOMAIN:localhost}:{$PORT:80} {
+    templates
+
+    root * {$BASEDIR}
+    file_server browse {
+        hide .git .env
+    }
+    encode zstd gzip
+
+    metrics /metrics
 }
