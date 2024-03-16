@@ -1,5 +1,5 @@
 
-FROM caddy:2.6.2-alpine
+FROM caddy:alpine
 
 ENV DOMAIN "localhost"
 ENV BASEDIR "/app/www"
