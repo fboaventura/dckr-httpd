@@ -1,14 +1,17 @@
+# syntax=docker/dockerfile:1.4
+# -----------------------------------------------------------------------------
+# Author: Frederico Boaventura <frederico@boaventura.net>
 
-FROM caddy:2.8.4-alpine
+FROM docker.io/library/caddy:2.10-alpine
 
-ENV DOMAIN "localhost"
-ENV BASEDIR "/app/www"
-ENV CONFDIR "/app/conf"
-ENV PORT "80"
+ENV DOMAIN="localhost"
+ENV BASEDIR="/app/www"
+ENV CONFDIR="/app/conf"
+ENV PORT="80"
 
 RUN mkdir -p /app/ssl /app/www /app/conf
 
-ADD files/Caddyfile /app/conf/
+COPY files/Caddyfile /app/conf/
 
 CMD ["/usr/bin/caddy", "run", "--config", "/app/conf/Caddyfile"]
 
