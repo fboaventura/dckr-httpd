@@ -9,7 +9,8 @@ ENV BASEDIR="/app/www"
 ENV CONFDIR="/app/conf"
 ENV PORT="80"
 
-RUN mkdir -p /app/ssl /app/www /app/conf
+RUN mkdir -p /app/ssl /app/www /app/conf \
+          && apk --no-cache upgrade
 
 COPY files/Caddyfile /app/conf/
 
