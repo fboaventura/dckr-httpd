@@ -2,7 +2,7 @@
 # -----------------------------------------------------------------------------
 # Author: Frederico Boaventura <frederico@boaventura.net>
 
-FROM docker.io/library/caddy:2.10-alpine
+FROM docker.io/library/caddy:2.11.4-alpine
 
 ENV DOMAIN="localhost"
 ENV BASEDIR="/app/www"
